@@ -71,8 +71,8 @@ class _dashboard_screenState extends State<dashboard_screen> {
             backgroundColor: Colors.white,
             child: CircleAvatar(
               radius: 26,
-              backgroundImage: NetworkImage(
-                  "https://i.pinimg.com/564x/2e/2f/bd/2e2fbddc9adbe65d16d28690e64a9cc3.jpg"),
+              backgroundImage: AssetImage(
+                  "assets/rick.jpg"),
             ),
           ),
           title: Text(
