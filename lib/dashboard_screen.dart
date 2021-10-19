@@ -140,7 +140,6 @@ class _dashboard_screenState extends State<dashboard_screen> {
               createTweetDialog(context);
             },
           ),
-          Spacer(),
           ListTile(
             title: Text("Logout",
                 style: GoogleFonts.montserrat(
