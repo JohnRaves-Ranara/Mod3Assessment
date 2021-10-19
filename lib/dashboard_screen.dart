@@ -13,6 +13,7 @@ class _dashboard_screenState extends State<dashboard_screen> {
   TextEditingController tweet_controller = TextEditingController();
   String tweet = "";
   final empty_tweet = SnackBar(content: Text("Tweet can't be empty."));
+  final published = SnackBar(content: Text("Tweet published successfully."));
 
   createTweetDialog(BuildContext context) {
     
@@ -28,6 +29,7 @@ class _dashboard_screenState extends State<dashboard_screen> {
           ),
               content:  TextField(
                 controller: tweet_controller,
+                maxLength: 240
               ),
               actions: [
                 TextButton(
@@ -38,6 +40,7 @@ class _dashboard_screenState extends State<dashboard_screen> {
                         tweet = tweet_controller.text;
                         tweet_controller.clear();
                         _addCardWidget();
+                        ScaffoldMessenger.of(context).showSnackBar(published);
                         Navigator.pop(context);
                       }else{
                         ScaffoldMessenger.of(context).showSnackBar(empty_tweet);
