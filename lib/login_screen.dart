@@ -45,18 +45,18 @@ Future<bool?> _onBackPressed(BuildContext context){
         resizeToAvoidBottomInset: false,
         backgroundColor: Color(0xFF1C1E31),
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 155, horizontal: 35),
+          padding: const EdgeInsets.symmetric(vertical: 200, horizontal: 35),
           child: Column(
             children: [
               Text(
-                'WEETER',
+                'BOOTLEG TWITTER',
                 style: GoogleFonts.montserrat(
                     textStyle: TextStyle(
-                        fontSize: 35,
+                        fontSize: 32,
                         fontWeight: FontWeight.bold,
                         color: Colors.white)),
               ),
-              SizedBox(height: 25),
+              SizedBox(height: 20),
               TextField(
                 controller: userInputController,
                 style:GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, color: Colors.white)),
