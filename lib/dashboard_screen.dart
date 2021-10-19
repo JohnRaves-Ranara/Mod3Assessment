@@ -130,6 +130,17 @@ class _dashboard_screenState extends State<dashboard_screen> {
       drawer: Drawer(
         backgroundColor: Color(0xFF1C1E31),
         child: ListView(children: [
+           ListTile(
+            title: Text("Tweet",
+                style: GoogleFonts.montserrat(
+                  textStyle: TextStyle(fontSize: 16, color: Colors.white),
+                )),
+            onTap: () {
+              Navigator.pop(context);
+              createTweetDialog(context);
+            },
+          ),
+          Spacer(),
           ListTile(
             title: Text("Logout",
                 style: GoogleFonts.montserrat(
